@@ -25,7 +25,7 @@ if ( ! is_admin() ) {
 
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-		wp_register_script( 'js-cookie', plugins_url( 'js_cookie' . $suffix . '.js', __FILE__ ), array( 'js' ), '2.1.4', true );
+		wp_register_script( 'js-cookie', plugins_url( 'js_cookie' . $suffix . '.js', __FILE__ ), array(), '2.1.4', true );
 
 	}
 }
